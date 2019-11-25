@@ -1,4 +1,4 @@
-const HomeItemsViewModel = require("./home-items-view-model");
+const HomeItemsViewModel = require("./Schedule-items-view-model");
 
 function onNavigatingTo(args) {
     const component = args.object;
@@ -11,7 +11,7 @@ function onItemTap(args) {
     const tappedItem = view.bindingContext;
 
     page.frame.navigate({
-        moduleName: "home/home-item-detail/home-item-detail-page",
+        moduleName: "Schedule/Schedule-item-detail/Schedule-item-detail-page",
         context: tappedItem,
         animated: true,
         transition: {
