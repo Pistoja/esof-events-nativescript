@@ -1,8 +1,8 @@
-const SearchViewModel = require("./Information-view-model");
+const InformationViewModel = require("./Information-view-model");
 
 function onNavigatingTo(args) {
     const component = args.object;
-    component.bindingContext = new SearchViewModel();
+    component.bindingContext = new InformationViewModel();
 }
 
 exports.onNavigatingTo = onNavigatingTo;
