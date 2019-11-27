@@ -1,16 +1,11 @@
 const observableModule = require("tns-core-modules/data/observable");
-const sufix = " ";
 
 function SpeakerViewModel() {
     const viewModel = observableModule.fromObject({
         /* Add your view model properties here */
-        test: `ciao mondo`,
-        subtitle: null
+        test: `ciao mondo`
     });
 
-    setTimeout(() => {
-        viewModel.subtitle =`${sufix} Mario Rossi`;
-    }, 1200);
     return viewModel;
 }
 
