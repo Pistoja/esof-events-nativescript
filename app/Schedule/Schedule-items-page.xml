@@ -13,6 +13,7 @@
     groupingFunction="{{ myGroupingFunc }}">
         <lv:RadListView.itemTemplate>
             <StackLayout orientation="vertical" >
+            <StackLayout class="wrap">
             <Label fontsize="16" class="border-list" text="{{ nome }}" textWrap="true"></Label>
                 <Label
                 fontsize="12"
@@ -20,7 +21,10 @@
                 text="{{sub}}"
                 textWrap="true">
                 </Label>
-            </StackLayout>
+                <StackLayout class="separator" height="2" >
+                </StackLayout>
+                </StackLayout>
+            </StackLayout >
         </lv:RadListView.itemTemplate>
     </lv:RadListView>
 </Page>

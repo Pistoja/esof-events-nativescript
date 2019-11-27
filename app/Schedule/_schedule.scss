@@ -2,12 +2,24 @@ $scheduleColor: #3880ff;
 ActionBar.schedule{
     background-color: $scheduleColor;
 }
+.wrap{
+    background-color: #ffffff;
+    border-bottom-width: 3;
+    border-bottom-color: #e4e4e4;
+}
+
+
 .border-list {
     border-left-width: 3;
-    border-color: #3bc7c4;
-    margin: 0;
+    border-left-color: #3bc7c4;
+    margin:0;
     &.sub{
         color: rgba(0,0,0,0.4);
     }
 }
+
+Page {
+    background-color: #e4e4e4;
+}
+
 
