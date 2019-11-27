@@ -13,8 +13,8 @@
   "repository": "<fill-your-repository-here>",
   "scripts": {
     "lint": "eslint \"app/**/*.js\"",
-    "iphone": "tns debug ios --device \"iPhone 11 Pro Max\"",
-    "iphone8": "tns debug ios --device \"iPhone 8\""
+    "ios": "tns debug ios --device \"iPhone 11 Pro Max\"",
+    "iphone": "tns debug ios --device \"iPhone 8\""
   },
   "dependencies": {
     "@nativescript/theme": "~2.2.0",
