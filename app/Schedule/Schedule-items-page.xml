@@ -21,7 +21,7 @@
                 text="{{sub}}"
                 textWrap="true">
                 </Label>
-                <StackLayout class="separator" height="2" >
+                <StackLayout height="2">
                 </StackLayout>
                 </StackLayout>
             </StackLayout >
