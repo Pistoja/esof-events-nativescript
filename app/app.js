@@ -1,8 +1,9 @@
 const application = require("tns-core-modules/application");
-
+const config = require("./config")
+const MapAPI = config.google.map.provideAPIKey || "AIzaSyCofJsVr2wxRrxEdGRnM3Mayzi8BIS8NO8"
 
 if(application.ios) {
-    GMSServices.provideAPIKey("AIzaSyCofJsVr2wxRrxEdGRnM3Mayzi8BIS8NO8");
+    GMSServices.provideAPIKey(MapAPI);
 }
 
 application.run({ moduleName: "app-root" });
