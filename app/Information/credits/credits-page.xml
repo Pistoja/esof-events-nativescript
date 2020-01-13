@@ -3,6 +3,7 @@
     navigatingTo="onNavigatingTo"
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
+
     <ActionBar backgroundColor= "#ffce00">
         <Label text="Credits"></Label>
     </ActionBar>
