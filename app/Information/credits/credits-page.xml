@@ -12,6 +12,5 @@
         <ScrollView height="80%">
         <Repeater items="{{ credits }}" />
         </ScrollView>
-        <button class="-outline -rounded-sm" text="Back" tap="onTap" />
     </StackLayout>
 </Page>
