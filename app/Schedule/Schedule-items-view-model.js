@@ -33,7 +33,7 @@ function ScheduleItemsViewModel() {
 }
 
 const firestore = firebase.firestore();
-const schedule = firestore.collection("schedule");
+//const schedule = firestore.collection("schedule");
 console.log(`schedule`, schedule);
 schedule.get().then((document) =>{
     console.log(`document`, document);
@@ -42,7 +42,7 @@ schedule.get().then((document) =>{
     });
 });
 
-
+/*
 var schedule = firebase.firestore().collection("schedule");
 schedule.get().them((querySnapshot) => {
     querySnapshot.forEach((doc) => {
@@ -50,7 +50,7 @@ schedule.get().them((querySnapshot) => {
     });
 
 });
-
+*/
 //ID autogenerato
 schedule.add({
     "nome": "Auto ID FINE2",
@@ -83,7 +83,7 @@ schedule.doc("RSkd7gKXZgD6agiNyUdy").set({
   schedule.doc("sssRSkd7gKXZgD6agiNyUdy").delete().then(() => {
       console.log("SF was erased from the face of the Earth!");
   });
-
+/*
   const query = schedule
     .where("inizio", "==", "9:00");
 
@@ -93,6 +93,6 @@ query.get()
     console.log("inizio alle 9", doc.data());
     });
 });
-
+*/
 
 module.exports = ScheduleItemsViewModel;
