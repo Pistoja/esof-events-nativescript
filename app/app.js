@@ -1,6 +1,6 @@
 const application = require("tns-core-modules/application");
 const config = require("./config")
-const firebase = require("nativescript-plugin-firebase/app")
+const firebase = require("nativescript-plugin-firebase")
 const MapAPI = config.google.map.provideAPIKey || "AIzaSyCofJsVr2wxRrxEdGRnM3Mayzi8BIS8NO8"
 
 if(application.ios) {
