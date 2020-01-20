@@ -52,6 +52,7 @@ schedule.get().them((querySnapshot) => {
 
 });
 */
+/*
 //ID autogenerato
 schedule.add({
     "nome": "Auto ID FINE2",
@@ -70,6 +71,8 @@ schedule.add({
       });
   });
 
+  */
+/*
 //ID scelto da te
 schedule.doc("RSkd7gKXZgD6agiNyUdy").set({
     "nome": "FINE2",
@@ -79,11 +82,14 @@ schedule.doc("RSkd7gKXZgD6agiNyUdy").set({
     "id": "RSkd7gKXZgD6agiNyUdy",
     "group": "11:00 - 12:00"
   });
+  */
 
+  /*
   //Eliminare un preciso ID
   schedule.doc("sssRSkd7gKXZgD6agiNyUdy").delete().then(() => {
       console.log("SF was erased from the face of the Earth!");
   });
+  */
 /*
   const query = schedule
     .where("inizio", "==", "9:00");
