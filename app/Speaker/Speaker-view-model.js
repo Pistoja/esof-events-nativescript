@@ -8,7 +8,7 @@ const speakers = firestore.collection("speakers");
 speakers.get().then((document) => {
     document.forEach((doc) => {
         const item = doc.data()
-        item.interventocompleto = `${item.nome} — ${item.inizio} ${item.fine}`
+        item.interventocompleto = `${item.intervento} — ${item.inizio} ${item.fine}`
         myObservableArray.push(item);
     });
 });
