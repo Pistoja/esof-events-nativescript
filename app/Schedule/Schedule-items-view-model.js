@@ -1,6 +1,7 @@
 const observableModule = require("tns-core-modules/data/observable");
 const data = require('./data')
 const firebase = require("nativescript-plugin-firebase/app")
+const ObservableArray = require("tns-core-modules/data/observable-array").ObservableArray;
 const redata = data.map((item) => {
     item.sub =`${item.inizio} - ${item.fine} ${item.luogo}`
     return item

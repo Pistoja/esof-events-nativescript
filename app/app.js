@@ -11,14 +11,22 @@ firebase.init({
     // Optionally pass in properties for database, authentication and cloud messaging,
     // see their respective docs.
     iOSEmulatorFlush: true,   //bug simulatore
-    persist: false
-  }).then(
-    () => {
-      console.log("firebase.init done");
+    persist: false,
+    onAuthStateChanged: function(data) {
+        console.log(data.loggedIn ? 'Logged' : 'Logged out')
+        if (data.loggedIn) {
+            console.log(' INIT USER', data)
+        }
+    }
+}).then(
+    function () {
+        console.log("Firebase.init done");
     },
-    error => {
-      console.log(`firebase.init error: ${error}`);
-  });
+    function (error) {
+        console.log("firebase.init error: " + error);
+    }
+);
+
 
 application.run({ moduleName: "app-root" });
 
