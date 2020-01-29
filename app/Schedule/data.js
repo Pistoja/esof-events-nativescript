@@ -22,7 +22,7 @@ module.exports = [
             "inizio": "10:00",
             "fine": "11:00",
             "luogo": "Piazza Unità d'Italia",
-            "id": "@263gs79",
+            "id": "@263gs78",
             "group": "9:00 - 11:00"
           }
 

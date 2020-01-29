@@ -18,9 +18,17 @@
   },
   "dependencies": {
     "@nativescript/theme": "~2.2.0",
-    "nativescript-google-maps-sdk": "^2.8.1",
+    "glob": "^7.1.6",
+    "nativescript-google-maps-sdk": "^2.9.1",
+    "nativescript-plugin-firebase": "^10.3.3",
     "nativescript-ui-listview": "^8.0.1",
-    "tns-core-modules": "~6.2.0"
+    "p-limit": "^2.2.2",
+    "picomatch": "^2.2.1",
+    "postcss": "^7.0.26",
+    "resolve": "^1.14.2",
+    "tns-core-modules": "^6.3.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
     "eslint": "~5.8.0",
